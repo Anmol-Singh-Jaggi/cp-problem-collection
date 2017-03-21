@@ -5,3 +5,15 @@ But if that mile has the option for billboard, then we have 2 options:
 
  1. Either we will place the billboard; ignore the billboard in previous `minDistanceAllowed` miles, and add the revenue of the billboard placed.
  2. Ignore this billboard. So `maxRevenueTill[i]` = `max(maxRevenueTill[i-minDistanceAllowed-1] + revenues[i], maxRevenueTill[i-1])`.
+
+-----
+
+**Algorithmic complexity:**
+
+```
+O(m)
+```
+
+where:
+
+ - `m` -> The number of miles.
